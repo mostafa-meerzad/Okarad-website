@@ -1,12 +1,1698 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Okarad Car Website</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>OKARAD Car Website</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <img src="./assets/logo.svg" alt="logo" class="header__logo" />
+        <div class="search header__search">
+          <button class="search__show-all">
+            <span>all items</span>
+            <svg
+              width="14"
+              height="8"
+              viewBox="0 0 14 8"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 1L7 7L13 1"
+                stroke="#001C3C"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+
+          <div class="search__v-var"></div>
+          <p class="search__placeholder">Total 42,868 vehices for sale</p>
+
+          <form action="#" class="search__form">
+            <!-- <input type="text" aria-label="search" /> -->
+            <button type="submit" class="button search__button">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="search-vector"
+              >
+                <path
+                  d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M20.9999 21.0004L16.6499 16.6504"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span>Search</span>
+            </button>
+          </form>
+        </div>
+
+        <div class="header__sign-in">
+          <span>Sign in</span>
+          <hr />
+          <span>Sign up for free</span>
+        </div>
+
+        <div class="header__hamburger">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+
+      <nav class="header__nav">
+        <ul class="nav">
+          <li><a href="#" class="nav__link">Home</a></li>
+          <li><a href="#" class="nav__link">How to Buy</a></li>
+          <li><a href="#" class="nav__link">Services</a></li>
+          <li><a href="#" class="nav__link">Shipping</a></li>
+          <li><a href="#" class="nav__link">Community</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="hero main__hero">
+        <h1 class="hero__title">Trusted Global OKARAD Trading Platfrom</h1>
+
+        <p class="hero__desc">
+          OKARAD is the global online marketplace for auto traders, providing
+          you with the easiest and safeest way to buy vehicles.
+        </p>
+
+        <button class="button hero__button">
+          <span>Explore now</span>
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="right-arrow"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M1.5 12C1.5 11.8011 1.57902 11.6104 1.71967 11.4697C1.86032 11.329 2.05109 11.25 2.25 11.25L19.9395 11.25L15.219 6.53103C15.0782 6.3902 14.9991 6.19919 14.9991 6.00003C14.9991 5.80087 15.0782 5.60986 15.219 5.46903C15.3598 5.3282 15.5508 5.24908 15.75 5.24908C15.9492 5.24908 16.1402 5.3282 16.281 5.46903L22.281 11.469C22.3508 11.5387 22.4063 11.6215 22.4441 11.7126C22.4819 11.8037 22.5013 11.9014 22.5013 12C22.5013 12.0987 22.4819 12.1964 22.4441 12.2875C22.4063 12.3786 22.3508 12.4614 22.281 12.531L16.281 18.531C16.1402 18.6719 15.9492 18.751 15.75 18.751C15.5508 18.751 15.3598 18.6719 15.219 18.531C15.0782 18.3902 14.9991 18.1992 14.9991 18C14.9991 17.8009 15.0782 17.6099 15.219 17.469L19.9395 12.75L2.25 12.75C2.05109 12.75 1.86032 12.671 1.71967 12.5304C1.57902 12.3897 1.5 12.1989 1.5 12Z"
+              fill="#19032A"
+            />
+          </svg>
+        </button>
+
+        <div class="hero__nav">
+          <button class="button button-round  hero__prev">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M22.5 12C22.5 11.8011 22.421 11.6104 22.2803 11.4697C22.1397 11.329 21.9489 11.25 21.75 11.25L4.0605 11.25L8.781 6.53103C8.92183 6.3902 9.00095 6.19919 9.00095 6.00003C9.00095 5.80087 8.92183 5.60986 8.781 5.46903C8.64017 5.3282 8.44916 5.24908 8.25 5.24908C8.05084 5.24908 7.85983 5.3282 7.719 5.46903L1.719 11.469C1.64915 11.5387 1.59374 11.6215 1.55593 11.7126C1.51812 11.8037 1.49866 11.9014 1.49866 12C1.49866 12.0987 1.51812 12.1964 1.55593 12.2875C1.59374 12.3786 1.64915 12.4614 1.719 12.531L7.719 18.531C7.85983 18.6719 8.05084 18.751 8.25 18.751C8.44916 18.751 8.64017 18.6719 8.781 18.531C8.92183 18.3902 9.00095 18.1992 9.00095 18C9.00095 17.8009 8.92183 17.6099 8.781 17.469L4.0605 12.75L21.75 12.75C21.9489 12.75 22.1397 12.671 22.2803 12.5304C22.421 12.3897 22.5 12.1989 22.5 12Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+
+          <button class="button button-round  hero__next">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M1.5 12C1.5 11.8011 1.57902 11.6104 1.71967 11.4697C1.86032 11.329 2.05109 11.25 2.25 11.25L19.9395 11.25L15.219 6.53103C15.0782 6.3902 14.9991 6.19919 14.9991 6.00003C14.9991 5.80087 15.0782 5.60986 15.219 5.46903C15.3598 5.3282 15.5508 5.24908 15.75 5.24908C15.9492 5.24908 16.1402 5.3282 16.281 5.46903L22.281 11.469C22.3508 11.5387 22.4063 11.6215 22.4441 11.7126C22.4819 11.8037 22.5013 11.9014 22.5013 12C22.5013 12.0987 22.4819 12.1964 22.4441 12.2875C22.4063 12.3786 22.3508 12.4614 22.281 12.531L16.281 18.531C16.1402 18.6719 15.9492 18.751 15.75 18.751C15.5508 18.751 15.3598 18.6719 15.219 18.531C15.0782 18.3902 14.9991 18.1992 14.9991 18C14.9991 17.8009 15.0782 17.6099 15.219 17.469L19.9395 12.75L2.25 12.75C2.05109 12.75 1.86032 12.671 1.71967 12.5304C1.57902 12.3897 1.5 12.1989 1.5 12Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="top-view main__top-view">
+        <h2 class="top-view__title">Top 14 views in Country</h2>
+        <p class="top-view__desc">
+          Bangladesh automotive industry is comparatively very profitable and
+          the most beneficial business in Bangladesh is the sale and purchase
+        </p>
+        <div class="top-view__cars-wrapper">
+          <button class="button button-round top-view__prev">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M22.5 12C22.5 11.8011 22.421 11.6104 22.2803 11.4697C22.1397 11.329 21.9489 11.25 21.75 11.25L4.0605 11.25L8.781 6.53103C8.92183 6.3902 9.00095 6.19919 9.00095 6.00003C9.00095 5.80087 8.92183 5.60986 8.781 5.46903C8.64017 5.3282 8.44916 5.24908 8.25 5.24908C8.05084 5.24908 7.85983 5.3282 7.719 5.46903L1.719 11.469C1.64915 11.5387 1.59374 11.6215 1.55593 11.7126C1.51812 11.8037 1.49866 11.9014 1.49866 12C1.49866 12.0987 1.51812 12.1964 1.55593 12.2875C1.59374 12.3786 1.64915 12.4614 1.719 12.531L7.719 18.531C7.85983 18.6719 8.05084 18.751 8.25 18.751C8.44916 18.751 8.64017 18.6719 8.781 18.531C8.92183 18.3902 9.00095 18.1992 9.00095 18C9.00095 17.8009 8.92183 17.6099 8.781 17.469L4.0605 12.75L21.75 12.75C21.9489 12.75 22.1397 12.671 22.2803 12.5304C22.421 12.3897 22.5 12.1989 22.5 12Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+
+          <button class="button button-round top-view__next">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M1.5 12C1.5 11.8011 1.57902 11.6104 1.71967 11.4697C1.86032 11.329 2.05109 11.25 2.25 11.25L19.9395 11.25L15.219 6.53103C15.0782 6.3902 14.9991 6.19919 14.9991 6.00003C14.9991 5.80087 15.0782 5.60986 15.219 5.46903C15.3598 5.3282 15.5508 5.24908 15.75 5.24908C15.9492 5.24908 16.1402 5.3282 16.281 5.46903L22.281 11.469C22.3508 11.5387 22.4063 11.6215 22.4441 11.7126C22.4819 11.8037 22.5013 11.9014 22.5013 12C22.5013 12.0987 22.4819 12.1964 22.4441 12.2875C22.4063 12.3786 22.3508 12.4614 22.281 12.531L16.281 18.531C16.1402 18.6719 15.9492 18.751 15.75 18.751C15.5508 18.751 15.3598 18.6719 15.219 18.531C15.0782 18.3902 14.9991 18.1992 14.9991 18C14.9991 17.8009 15.0782 17.6099 15.219 17.469L19.9395 12.75L2.25 12.75C2.05109 12.75 1.86032 12.671 1.71967 12.5304C1.57902 12.3897 1.5 12.1989 1.5 12Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+
+          <div class="top-car top-view__car">
+            <img src="./assets/image1.png" alt="" class="top-car__img" />
+            <p class="top-car__desc">2001 Ssangyong Istana SUPER PRIME 12SEAT</p>
+            <p class="top-car__price">USD 3,403</p>
+            <button class="top-car__button button">Buy Now</button>
+          </div>
+          <div class="top-car top-view__car">
+            <img src="./assets/image2.png" alt="" class="top-car__img" />
+            <p class="top-car__desc">2014 BMW 3 Series (F30) AUTO+S.KEY+SUN</p>
+            <p class="top-car__price">USD 3,403</p>
+            <button class="top-car__button button">Buy Now</button>
+          </div>
+          <div class="top-car top-view__car">
+            <img src="./assets/image3.png" alt="" class="top-car__img" />
+            <p class="top-car__desc">2014 BMW 3 Series (F30) AUTO+S.KEY+SUN</p>
+            <p class="top-car__price">USD 3,403</p>
+            <button class="top-car__button button">Buy Now</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="about main__about">
+        <h2 class="about__title">About OKARAD</h2>
+        <p class="about__desc">
+          Tired of being tied to a single brand? Do you think just possibly your
+          needs should come before allegiances to manufacturers or suppliers.
+        </p>
+
+        <img src="./assets/image4.png" alt="" class="about__img1" />
+        <img src="./assets/image5.png" alt="" class="about__img2" />
+
+        <div class="about__item">
+          <h3>+70k+</h3>
+          <p>Registered Buyers</p>
+        </div>
+        <div class="about__item">
+          <h3>+240</h3>
+          <p>Registered Countries</p>
+        </div>
+        <div class="about__item">
+          <h3>+118</h3>
+          <p>Countries we sold to</p>
+        </div>
+
+        <img src="./assets/cube.svg" alt="cube" class="about__cube" />
+      </section>
+
+      <section class="trending main__trending">
+        <h2 class="trending__title">Trending Categories</h2>
+        <p class="trending__desc">
+          There are many variations of passages of Lorem Ipsum available, but
+          the majority have suffered
+        </p>
+
+        <button class="button button-round trending__prev">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M22.5 12C22.5 11.8011 22.421 11.6104 22.2803 11.4697C22.1397 11.329 21.9489 11.25 21.75 11.25L4.0605 11.25L8.781 6.53103C8.92183 6.3902 9.00095 6.19919 9.00095 6.00003C9.00095 5.80087 8.92183 5.60986 8.781 5.46903C8.64017 5.3282 8.44916 5.24908 8.25 5.24908C8.05084 5.24908 7.85983 5.3282 7.719 5.46903L1.719 11.469C1.64915 11.5387 1.59374 11.6215 1.55593 11.7126C1.51812 11.8037 1.49866 11.9014 1.49866 12C1.49866 12.0987 1.51812 12.1964 1.55593 12.2875C1.59374 12.3786 1.64915 12.4614 1.719 12.531L7.719 18.531C7.85983 18.6719 8.05084 18.751 8.25 18.751C8.44916 18.751 8.64017 18.6719 8.781 18.531C8.92183 18.3902 9.00095 18.1992 9.00095 18C9.00095 17.8009 8.92183 17.6099 8.781 17.469L4.0605 12.75L21.75 12.75C21.9489 12.75 22.1397 12.671 22.2803 12.5304C22.421 12.3897 22.5 12.1989 22.5 12Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+
+        <button class="button button-round trending__next">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M1.5 12C1.5 11.8011 1.57902 11.6104 1.71967 11.4697C1.86032 11.329 2.05109 11.25 2.25 11.25L19.9395 11.25L15.219 6.53103C15.0782 6.3902 14.9991 6.19919 14.9991 6.00003C14.9991 5.80087 15.0782 5.60986 15.219 5.46903C15.3598 5.3282 15.5508 5.24908 15.75 5.24908C15.9492 5.24908 16.1402 5.3282 16.281 5.46903L22.281 11.469C22.3508 11.5387 22.4063 11.6215 22.4441 11.7126C22.4819 11.8037 22.5013 11.9014 22.5013 12C22.5013 12.0987 22.4819 12.1964 22.4441 12.2875C22.4063 12.3786 22.3508 12.4614 22.281 12.531L16.281 18.531C16.1402 18.6719 15.9492 18.751 15.75 18.751C15.5508 18.751 15.3598 18.6719 15.219 18.531C15.0782 18.3902 14.9991 18.1992 14.9991 18C14.9991 17.8009 15.0782 17.6099 15.219 17.469L19.9395 12.75L2.25 12.75C2.05109 12.75 1.86032 12.671 1.71967 12.5304C1.57902 12.3897 1.5 12.1989 1.5 12Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+
+        <div class="trending__car-wrapper">
+          <div class="trend-car trending__car">
+            <img src="./assets/image6.png" alt="" />
+            <p class="trend-car__desc">
+              2019 Renault Samsung QM6 Gasoline 2WD RE Signature
+            </p>
+            <span class="trend-car__remaining">1854 for sale</span>
+          </div>
+          <div class="trend-car trending__car">
+            <img src="./assets/image7.png" alt="" />
+            <p class="trend-car__desc">
+              2019 Renault Samsung QM6 Gasoline 2WD RE Signature
+            </p>
+            <span class="trend-car__remaining">1854 for sale</span>
+          </div>
+          <div class="trend-car trending__car">
+            <img src="./assets/image8.png" alt="" />
+            <p class="trend-car__desc">
+              2019 Renault Samsung QM6 Gasoline 2WD RE Signature
+            </p>
+            <span class="trend-car__remaining">1854 for sale</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="video main__video">
+        <div class="video__video">
+          <img src="./assets/image9.png" alt="" />
+          <svg
+            width="136"
+            height="136"
+            viewBox="0 0 136 136"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g filter="url(#filter0_d_108_4415)">
+              <circle
+                cx="68"
+                cy="58"
+                r="48"
+                fill="white"
+                fill-opacity="0.4"
+                shape-rendering="crispEdges"
+              />
+            </g>
+            <g filter="url(#filter1_d_108_4415)">
+              <circle
+                cx="68"
+                cy="58"
+                r="38"
+                fill="white"
+                fill-opacity="0.7"
+                shape-rendering="crispEdges"
+              />
+              <circle
+                cx="68"
+                cy="58"
+                r="37.25"
+                stroke="white"
+                stroke-width="1.5"
+                shape-rendering="crispEdges"
+              />
+            </g>
+            <path
+              d="M78.6413 52.3049L65.9706 44.9895C64.3484 44.0529 62.35 44.0516 60.7265 44.986C59.1029 45.9204 58.1003 47.6491 58.0952 49.5223V64.188C58.1003 66.0613 59.1029 67.7899 60.7265 68.7243C62.35 69.6587 64.3484 69.6574 65.9706 68.7208L78.6413 61.4054C80.269 60.4684 81.2723 58.7333 81.2723 56.8552C81.2723 54.977 80.269 53.2419 78.6413 52.3049Z"
+              fill="#111111"
+            />
+            <defs>
+              <filter
+                id="filter0_d_108_4415"
+                x="0"
+                y="0"
+                width="136"
+                height="136"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                />
+                <feOffset dy="10" />
+                <feGaussianBlur stdDeviation="10" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="BackgroundImageFix"
+                  result="effect1_dropShadow_108_4415"
+                />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_dropShadow_108_4415"
+                  result="shape"
+                />
+              </filter>
+              <filter
+                id="filter1_d_108_4415"
+                x="10"
+                y="10"
+                width="116"
+                height="116"
+                filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB"
+              >
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix
+                  in="SourceAlpha"
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                  result="hardAlpha"
+                />
+                <feOffset dy="10" />
+                <feGaussianBlur stdDeviation="10" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix
+                  type="matrix"
+                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.38 0"
+                />
+                <feBlend
+                  mode="normal"
+                  in2="BackgroundImageFix"
+                  result="effect1_dropShadow_108_4415"
+                />
+                <feBlend
+                  mode="normal"
+                  in="SourceGraphic"
+                  in2="effect1_dropShadow_108_4415"
+                  result="shape"
+                />
+              </filter>
+            </defs>
+          </svg>
+        </div>
+
+        <div class="video__detail">
+          <h2 class="video__title">
+            Watch video from the number one car revieo channel in bangladesh
+          </h2>
+          <p class="video__desc">
+            There are many variations of passages of Lorem Ipsum available, but
+            the majority have suffered alteration in some form, by injected
+            humour.
+          </p>
+
+          <button class="button button-round video__prev">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M22.5 12C22.5 11.8011 22.421 11.6104 22.2803 11.4697C22.1397 11.329 21.9489 11.25 21.75 11.25L4.0605 11.25L8.781 6.53103C8.92183 6.3902 9.00095 6.19919 9.00095 6.00003C9.00095 5.80087 8.92183 5.60986 8.781 5.46903C8.64017 5.3282 8.44916 5.24908 8.25 5.24908C8.05084 5.24908 7.85983 5.3282 7.719 5.46903L1.719 11.469C1.64915 11.5387 1.59374 11.6215 1.55593 11.7126C1.51812 11.8037 1.49866 11.9014 1.49866 12C1.49866 12.0987 1.51812 12.1964 1.55593 12.2875C1.59374 12.3786 1.64915 12.4614 1.719 12.531L7.719 18.531C7.85983 18.6719 8.05084 18.751 8.25 18.751C8.44916 18.751 8.64017 18.6719 8.781 18.531C8.92183 18.3902 9.00095 18.1992 9.00095 18C9.00095 17.8009 8.92183 17.6099 8.781 17.469L4.0605 12.75L21.75 12.75C21.9489 12.75 22.1397 12.671 22.2803 12.5304C22.421 12.3897 22.5 12.1989 22.5 12Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+          <button class="button button-round video__next">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M1.5 12C1.5 11.8011 1.57902 11.6104 1.71967 11.4697C1.86032 11.329 2.05109 11.25 2.25 11.25L19.9395 11.25L15.219 6.53103C15.0782 6.3902 14.9991 6.19919 14.9991 6.00003C14.9991 5.80087 15.0782 5.60986 15.219 5.46903C15.3598 5.3282 15.5508 5.24908 15.75 5.24908C15.9492 5.24908 16.1402 5.3282 16.281 5.46903L22.281 11.469C22.3508 11.5387 22.4063 11.6215 22.4441 11.7126C22.4819 11.8037 22.5013 11.9014 22.5013 12C22.5013 12.0987 22.4819 12.1964 22.4441 12.2875C22.4063 12.3786 22.3508 12.4614 22.281 12.531L16.281 18.531C16.1402 18.6719 15.9492 18.751 15.75 18.751C15.5508 18.751 15.3598 18.6719 15.219 18.531C15.0782 18.3902 14.9991 18.1992 14.9991 18C14.9991 17.8009 15.0782 17.6099 15.219 17.469L19.9395 12.75L2.25 12.75C2.05109 12.75 1.86032 12.671 1.71967 12.5304C1.57902 12.3897 1.5 12.1989 1.5 12Z"
+                fill="white"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+
+      <section class="membership main__membership">
+        <h2 class="membership__title">Membership Options</h2>
+        <p class="membership__desc">
+          Join our membership and enjoy all the privileges in OKARAD
+        </p>
+
+        <div class="plan membership__plan membership__basic">
+          <h3 class="plan__title">Silver</h3>
+          <h3 class="plan__cost">USD 50/Unit</h3>
+
+          <ul class="plan__list">
+            <li class="plan__item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_191_448)">
+                  <path
+                    d="M14.6668 7.38674V8.00007C14.666 9.43769 14.2005 10.8365 13.3397 11.988C12.4789 13.1394 11.269 13.9817 9.8904 14.3893C8.51178 14.797 7.03834 14.748 5.68981 14.2498C4.34128 13.7516 3.18993 12.8308 2.40747 11.6248C1.62501 10.4188 1.25336 8.99212 1.34795 7.55762C1.44254 6.12312 1.9983 4.75762 2.93235 3.66479C3.8664 2.57195 5.12869 1.81033 6.53096 1.4935C7.93323 1.17668 9.40034 1.32163 10.7135 1.90674"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 2.6665L8 9.33984L6 7.33984"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_191_448">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span>Minimum Purchase </span>
+              <span>Sign Up</span>
+            </li>
+
+            <li class="plan__item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_191_448)">
+                  <path
+                    d="M14.6668 7.38674V8.00007C14.666 9.43769 14.2005 10.8365 13.3397 11.988C12.4789 13.1394 11.269 13.9817 9.8904 14.3893C8.51178 14.797 7.03834 14.748 5.68981 14.2498C4.34128 13.7516 3.18993 12.8308 2.40747 11.6248C1.62501 10.4188 1.25336 8.99212 1.34795 7.55762C1.44254 6.12312 1.9983 4.75762 2.93235 3.66479C3.8664 2.57195 5.12869 1.81033 6.53096 1.4935C7.93323 1.17668 9.40034 1.32163 10.7135 1.90674"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 2.6665L8 9.33984L6 7.33984"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_191_448">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span>Self Booking</span>
+            </li>
+
+            <li class="plan__item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_191_448)">
+                  <path
+                    d="M14.6668 7.38674V8.00007C14.666 9.43769 14.2005 10.8365 13.3397 11.988C12.4789 13.1394 11.269 13.9817 9.8904 14.3893C8.51178 14.797 7.03834 14.748 5.68981 14.2498C4.34128 13.7516 3.18993 12.8308 2.40747 11.6248C1.62501 10.4188 1.25336 8.99212 1.34795 7.55762C1.44254 6.12312 1.9983 4.75762 2.93235 3.66479C3.8664 2.57195 5.12869 1.81033 6.53096 1.4935C7.93323 1.17668 9.40034 1.32163 10.7135 1.90674"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 2.6665L8 9.33984L6 7.33984"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_191_448">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span>Special Discount</span>
+            </li>
+
+            <li class="plan__item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_191_448)">
+                  <path
+                    d="M14.6668 7.38674V8.00007C14.666 9.43769 14.2005 10.8365 13.3397 11.988C12.4789 13.1394 11.269 13.9817 9.8904 14.3893C8.51178 14.797 7.03834 14.748 5.68981 14.2498C4.34128 13.7516 3.18993 12.8308 2.40747 11.6248C1.62501 10.4188 1.25336 8.99212 1.34795 7.55762C1.44254 6.12312 1.9983 4.75762 2.93235 3.66479C3.8664 2.57195 5.12869 1.81033 6.53096 1.4935C7.93323 1.17668 9.40034 1.32163 10.7135 1.90674"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 2.6665L8 9.33984L6 7.33984"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_191_448">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span>Early Access to Fresh Stock </span>
+            </li>
+
+            <li class="plan__item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_191_448)">
+                  <path
+                    d="M14.6668 7.38674V8.00007C14.666 9.43769 14.2005 10.8365 13.3397 11.988C12.4789 13.1394 11.269 13.9817 9.8904 14.3893C8.51178 14.797 7.03834 14.748 5.68981 14.2498C4.34128 13.7516 3.18993 12.8308 2.40747 11.6248C1.62501 10.4188 1.25336 8.99212 1.34795 7.55762C1.44254 6.12312 1.9983 4.75762 2.93235 3.66479C3.8664 2.57195 5.12869 1.81033 6.53096 1.4935C7.93323 1.17668 9.40034 1.32163 10.7135 1.90674"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 2.6665L8 9.33984L6 7.33984"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_191_448">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span>Priority Shipping </span>
+            </li>
+
+            <li class="plan__item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_191_448)">
+                  <path
+                    d="M14.6668 7.38674V8.00007C14.666 9.43769 14.2005 10.8365 13.3397 11.988C12.4789 13.1394 11.269 13.9817 9.8904 14.3893C8.51178 14.797 7.03834 14.748 5.68981 14.2498C4.34128 13.7516 3.18993 12.8308 2.40747 11.6248C1.62501 10.4188 1.25336 8.99212 1.34795 7.55762C1.44254 6.12312 1.9983 4.75762 2.93235 3.66479C3.8664 2.57195 5.12869 1.81033 6.53096 1.4935C7.93323 1.17668 9.40034 1.32163 10.7135 1.90674"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 2.6665L8 9.33984L6 7.33984"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_191_448">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span>View Insurance History Report </span>
+            </li>
+
+            <li class="plan__item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_191_448)">
+                  <path
+                    d="M14.6668 7.38674V8.00007C14.666 9.43769 14.2005 10.8365 13.3397 11.988C12.4789 13.1394 11.269 13.9817 9.8904 14.3893C8.51178 14.797 7.03834 14.748 5.68981 14.2498C4.34128 13.7516 3.18993 12.8308 2.40747 11.6248C1.62501 10.4188 1.25336 8.99212 1.34795 7.55762C1.44254 6.12312 1.9983 4.75762 2.93235 3.66479C3.8664 2.57195 5.12869 1.81033 6.53096 1.4935C7.93323 1.17668 9.40034 1.32163 10.7135 1.90674"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 2.6665L8 9.33984L6 7.33984"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_191_448">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span>Booking Request </span>
+              <span>10/Day</span>
+            </li>
+
+            <li class="plan__item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_191_448)">
+                  <path
+                    d="M14.6668 7.38674V8.00007C14.666 9.43769 14.2005 10.8365 13.3397 11.988C12.4789 13.1394 11.269 13.9817 9.8904 14.3893C8.51178 14.797 7.03834 14.748 5.68981 14.2498C4.34128 13.7516 3.18993 12.8308 2.40747 11.6248C1.62501 10.4188 1.25336 8.99212 1.34795 7.55762C1.44254 6.12312 1.9983 4.75762 2.93235 3.66479C3.8664 2.57195 5.12869 1.81033 6.53096 1.4935C7.93323 1.17668 9.40034 1.32163 10.7135 1.90674"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 2.6665L8 9.33984L6 7.33984"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_191_448">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span>Photo Download </span>
+            </li>
+
+            <li class="plan__item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_191_448)">
+                  <path
+                    d="M14.6668 7.38674V8.00007C14.666 9.43769 14.2005 10.8365 13.3397 11.988C12.4789 13.1394 11.269 13.9817 9.8904 14.3893C8.51178 14.797 7.03834 14.748 5.68981 14.2498C4.34128 13.7516 3.18993 12.8308 2.40747 11.6248C1.62501 10.4188 1.25336 8.99212 1.34795 7.55762C1.44254 6.12312 1.9983 4.75762 2.93235 3.66479C3.8664 2.57195 5.12869 1.81033 6.53096 1.4935C7.93323 1.17668 9.40034 1.32163 10.7135 1.90674"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 2.6665L8 9.33984L6 7.33984"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_191_448">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span>Inspection </span>
+            </li>
+          </ul>
+
+          <button class="plan__button">Choose Plan</button>
+        </div>
+
+        <div class="plan membership__plan membership__silver">
+          <h3 class="plan__title">Silver</h3>
+          <h3 class="plan__cost">USD 50/Unit</h3>
+
+          <ul class="plan__list">
+            <li class="plan__item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_191_448)">
+                  <path
+                    d="M14.6668 7.38674V8.00007C14.666 9.43769 14.2005 10.8365 13.3397 11.988C12.4789 13.1394 11.269 13.9817 9.8904 14.3893C8.51178 14.797 7.03834 14.748 5.68981 14.2498C4.34128 13.7516 3.18993 12.8308 2.40747 11.6248C1.62501 10.4188 1.25336 8.99212 1.34795 7.55762C1.44254 6.12312 1.9983 4.75762 2.93235 3.66479C3.8664 2.57195 5.12869 1.81033 6.53096 1.4935C7.93323 1.17668 9.40034 1.32163 10.7135 1.90674"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 2.6665L8 9.33984L6 7.33984"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_191_448">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span>Minimum Purchase </span>
+              <span>10 Units/Year</span>
+            </li>
+
+            <li class="plan__item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_191_448)">
+                  <path
+                    d="M14.6668 7.38674V8.00007C14.666 9.43769 14.2005 10.8365 13.3397 11.988C12.4789 13.1394 11.269 13.9817 9.8904 14.3893C8.51178 14.797 7.03834 14.748 5.68981 14.2498C4.34128 13.7516 3.18993 12.8308 2.40747 11.6248C1.62501 10.4188 1.25336 8.99212 1.34795 7.55762C1.44254 6.12312 1.9983 4.75762 2.93235 3.66479C3.8664 2.57195 5.12869 1.81033 6.53096 1.4935C7.93323 1.17668 9.40034 1.32163 10.7135 1.90674"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 2.6665L8 9.33984L6 7.33984"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_191_448">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span>Self Booking</span>
+              <span>3/Month</span>
+            </li>
+
+            <li class="plan__item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_191_448)">
+                  <path
+                    d="M14.6668 7.38674V8.00007C14.666 9.43769 14.2005 10.8365 13.3397 11.988C12.4789 13.1394 11.269 13.9817 9.8904 14.3893C8.51178 14.797 7.03834 14.748 5.68981 14.2498C4.34128 13.7516 3.18993 12.8308 2.40747 11.6248C1.62501 10.4188 1.25336 8.99212 1.34795 7.55762C1.44254 6.12312 1.9983 4.75762 2.93235 3.66479C3.8664 2.57195 5.12869 1.81033 6.53096 1.4935C7.93323 1.17668 9.40034 1.32163 10.7135 1.90674"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 2.6665L8 9.33984L6 7.33984"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_191_448">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span>Special Discount</span>
+              <span>-USD 50/Unit</span>
+            </li>
+
+            <li class="plan__item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_191_448)">
+                  <path
+                    d="M14.6668 7.38674V8.00007C14.666 9.43769 14.2005 10.8365 13.3397 11.988C12.4789 13.1394 11.269 13.9817 9.8904 14.3893C8.51178 14.797 7.03834 14.748 5.68981 14.2498C4.34128 13.7516 3.18993 12.8308 2.40747 11.6248C1.62501 10.4188 1.25336 8.99212 1.34795 7.55762C1.44254 6.12312 1.9983 4.75762 2.93235 3.66479C3.8664 2.57195 5.12869 1.81033 6.53096 1.4935C7.93323 1.17668 9.40034 1.32163 10.7135 1.90674"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 2.6665L8 9.33984L6 7.33984"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_191_448">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span>Early Access to Fresh Stock </span>
+              <span>-</span>
+            </li>
+
+            <li class="plan__item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_191_448)">
+                  <path
+                    d="M14.6668 7.38674V8.00007C14.666 9.43769 14.2005 10.8365 13.3397 11.988C12.4789 13.1394 11.269 13.9817 9.8904 14.3893C8.51178 14.797 7.03834 14.748 5.68981 14.2498C4.34128 13.7516 3.18993 12.8308 2.40747 11.6248C1.62501 10.4188 1.25336 8.99212 1.34795 7.55762C1.44254 6.12312 1.9983 4.75762 2.93235 3.66479C3.8664 2.57195 5.12869 1.81033 6.53096 1.4935C7.93323 1.17668 9.40034 1.32163 10.7135 1.90674"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 2.6665L8 9.33984L6 7.33984"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_191_448">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span>Priority Shipping </span>
+              <span>-</span>
+            </li>
+
+            <li class="plan__item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_191_448)">
+                  <path
+                    d="M14.6668 7.38674V8.00007C14.666 9.43769 14.2005 10.8365 13.3397 11.988C12.4789 13.1394 11.269 13.9817 9.8904 14.3893C8.51178 14.797 7.03834 14.748 5.68981 14.2498C4.34128 13.7516 3.18993 12.8308 2.40747 11.6248C1.62501 10.4188 1.25336 8.99212 1.34795 7.55762C1.44254 6.12312 1.9983 4.75762 2.93235 3.66479C3.8664 2.57195 5.12869 1.81033 6.53096 1.4935C7.93323 1.17668 9.40034 1.32163 10.7135 1.90674"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 2.6665L8 9.33984L6 7.33984"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_191_448">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span> View Insurance History Report </span>
+              <span>-</span>
+            </li>
+
+            <li class="plan__item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_191_448)">
+                  <path
+                    d="M14.6668 7.38674V8.00007C14.666 9.43769 14.2005 10.8365 13.3397 11.988C12.4789 13.1394 11.269 13.9817 9.8904 14.3893C8.51178 14.797 7.03834 14.748 5.68981 14.2498C4.34128 13.7516 3.18993 12.8308 2.40747 11.6248C1.62501 10.4188 1.25336 8.99212 1.34795 7.55762C1.44254 6.12312 1.9983 4.75762 2.93235 3.66479C3.8664 2.57195 5.12869 1.81033 6.53096 1.4935C7.93323 1.17668 9.40034 1.32163 10.7135 1.90674"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 2.6665L8 9.33984L6 7.33984"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_191_448">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span>Booking Request </span>
+              <span>20/Day</span>
+            </li>
+
+            <li class="plan__item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_191_448)">
+                  <path
+                    d="M14.6668 7.38674V8.00007C14.666 9.43769 14.2005 10.8365 13.3397 11.988C12.4789 13.1394 11.269 13.9817 9.8904 14.3893C8.51178 14.797 7.03834 14.748 5.68981 14.2498C4.34128 13.7516 3.18993 12.8308 2.40747 11.6248C1.62501 10.4188 1.25336 8.99212 1.34795 7.55762C1.44254 6.12312 1.9983 4.75762 2.93235 3.66479C3.8664 2.57195 5.12869 1.81033 6.53096 1.4935C7.93323 1.17668 9.40034 1.32163 10.7135 1.90674"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 2.6665L8 9.33984L6 7.33984"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_191_448">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span>Photo Download </span>
+              <span>5/Month</span>
+            </li>
+
+            <li class="plan__item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_191_448)">
+                  <path
+                    d="M14.6668 7.38674V8.00007C14.666 9.43769 14.2005 10.8365 13.3397 11.988C12.4789 13.1394 11.269 13.9817 9.8904 14.3893C8.51178 14.797 7.03834 14.748 5.68981 14.2498C4.34128 13.7516 3.18993 12.8308 2.40747 11.6248C1.62501 10.4188 1.25336 8.99212 1.34795 7.55762C1.44254 6.12312 1.9983 4.75762 2.93235 3.66479C3.8664 2.57195 5.12869 1.81033 6.53096 1.4935C7.93323 1.17668 9.40034 1.32163 10.7135 1.90674"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 2.6665L8 9.33984L6 7.33984"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_191_448">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span>Inspection </span>
+              <span>(50% Discount)</span>
+            </li>
+          </ul>
+
+          <button class="plan__button">Choose Plan</button>
+        </div>
+
+        <div class="plan membership__plan membership__gold">
+          <h3 class="plan__title">Silver</h3>
+          <h3 class="plan__cost">USD 50/Unit</h3>
+
+          <ul class="plan__list">
+            <li class="plan__item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_191_448)">
+                  <path
+                    d="M14.6668 7.38674V8.00007C14.666 9.43769 14.2005 10.8365 13.3397 11.988C12.4789 13.1394 11.269 13.9817 9.8904 14.3893C8.51178 14.797 7.03834 14.748 5.68981 14.2498C4.34128 13.7516 3.18993 12.8308 2.40747 11.6248C1.62501 10.4188 1.25336 8.99212 1.34795 7.55762C1.44254 6.12312 1.9983 4.75762 2.93235 3.66479C3.8664 2.57195 5.12869 1.81033 6.53096 1.4935C7.93323 1.17668 9.40034 1.32163 10.7135 1.90674"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 2.6665L8 9.33984L6 7.33984"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_191_448">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span>Minimum Purchase </span>
+              <span>30 Units/Year</span>
+            </li>
+
+            <li class="plan__item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_191_448)">
+                  <path
+                    d="M14.6668 7.38674V8.00007C14.666 9.43769 14.2005 10.8365 13.3397 11.988C12.4789 13.1394 11.269 13.9817 9.8904 14.3893C8.51178 14.797 7.03834 14.748 5.68981 14.2498C4.34128 13.7516 3.18993 12.8308 2.40747 11.6248C1.62501 10.4188 1.25336 8.99212 1.34795 7.55762C1.44254 6.12312 1.9983 4.75762 2.93235 3.66479C3.8664 2.57195 5.12869 1.81033 6.53096 1.4935C7.93323 1.17668 9.40034 1.32163 10.7135 1.90674"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 2.6665L8 9.33984L6 7.33984"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_191_448">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span>Self Booking</span>
+              <span>-USD 100/Unit</span>
+            </li>
+
+            <li class="plan__item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_191_448)">
+                  <path
+                    d="M14.6668 7.38674V8.00007C14.666 9.43769 14.2005 10.8365 13.3397 11.988C12.4789 13.1394 11.269 13.9817 9.8904 14.3893C8.51178 14.797 7.03834 14.748 5.68981 14.2498C4.34128 13.7516 3.18993 12.8308 2.40747 11.6248C1.62501 10.4188 1.25336 8.99212 1.34795 7.55762C1.44254 6.12312 1.9983 4.75762 2.93235 3.66479C3.8664 2.57195 5.12869 1.81033 6.53096 1.4935C7.93323 1.17668 9.40034 1.32163 10.7135 1.90674"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 2.6665L8 9.33984L6 7.33984"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_191_448">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span>Special Discount</span>
+              <span>-</span>
+            </li>
+
+            <li class="plan__item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_191_448)">
+                  <path
+                    d="M14.6668 7.38674V8.00007C14.666 9.43769 14.2005 10.8365 13.3397 11.988C12.4789 13.1394 11.269 13.9817 9.8904 14.3893C8.51178 14.797 7.03834 14.748 5.68981 14.2498C4.34128 13.7516 3.18993 12.8308 2.40747 11.6248C1.62501 10.4188 1.25336 8.99212 1.34795 7.55762C1.44254 6.12312 1.9983 4.75762 2.93235 3.66479C3.8664 2.57195 5.12869 1.81033 6.53096 1.4935C7.93323 1.17668 9.40034 1.32163 10.7135 1.90674"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 2.6665L8 9.33984L6 7.33984"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_191_448">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span>Early Access to Fresh Stock </span>
+              <span>-</span>
+            </li>
+
+            <li class="plan__item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_191_448)">
+                  <path
+                    d="M14.6668 7.38674V8.00007C14.666 9.43769 14.2005 10.8365 13.3397 11.988C12.4789 13.1394 11.269 13.9817 9.8904 14.3893C8.51178 14.797 7.03834 14.748 5.68981 14.2498C4.34128 13.7516 3.18993 12.8308 2.40747 11.6248C1.62501 10.4188 1.25336 8.99212 1.34795 7.55762C1.44254 6.12312 1.9983 4.75762 2.93235 3.66479C3.8664 2.57195 5.12869 1.81033 6.53096 1.4935C7.93323 1.17668 9.40034 1.32163 10.7135 1.90674"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 2.6665L8 9.33984L6 7.33984"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_191_448">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span>Priority Shipping </span>
+              <span>-</span>
+            </li>
+
+            <li class="plan__item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_191_448)">
+                  <path
+                    d="M14.6668 7.38674V8.00007C14.666 9.43769 14.2005 10.8365 13.3397 11.988C12.4789 13.1394 11.269 13.9817 9.8904 14.3893C8.51178 14.797 7.03834 14.748 5.68981 14.2498C4.34128 13.7516 3.18993 12.8308 2.40747 11.6248C1.62501 10.4188 1.25336 8.99212 1.34795 7.55762C1.44254 6.12312 1.9983 4.75762 2.93235 3.66479C3.8664 2.57195 5.12869 1.81033 6.53096 1.4935C7.93323 1.17668 9.40034 1.32163 10.7135 1.90674"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 2.6665L8 9.33984L6 7.33984"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_191_448">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span> View Insurance History Report </span>
+              <span>-</span>
+            </li>
+
+            <li class="plan__item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_191_448)">
+                  <path
+                    d="M14.6668 7.38674V8.00007C14.666 9.43769 14.2005 10.8365 13.3397 11.988C12.4789 13.1394 11.269 13.9817 9.8904 14.3893C8.51178 14.797 7.03834 14.748 5.68981 14.2498C4.34128 13.7516 3.18993 12.8308 2.40747 11.6248C1.62501 10.4188 1.25336 8.99212 1.34795 7.55762C1.44254 6.12312 1.9983 4.75762 2.93235 3.66479C3.8664 2.57195 5.12869 1.81033 6.53096 1.4935C7.93323 1.17668 9.40034 1.32163 10.7135 1.90674"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 2.6665L8 9.33984L6 7.33984"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_191_448">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span>Booking Request </span>
+              <span>30/Day</span>
+            </li>
+
+            <li class="plan__item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_191_448)">
+                  <path
+                    d="M14.6668 7.38674V8.00007C14.666 9.43769 14.2005 10.8365 13.3397 11.988C12.4789 13.1394 11.269 13.9817 9.8904 14.3893C8.51178 14.797 7.03834 14.748 5.68981 14.2498C4.34128 13.7516 3.18993 12.8308 2.40747 11.6248C1.62501 10.4188 1.25336 8.99212 1.34795 7.55762C1.44254 6.12312 1.9983 4.75762 2.93235 3.66479C3.8664 2.57195 5.12869 1.81033 6.53096 1.4935C7.93323 1.17668 9.40034 1.32163 10.7135 1.90674"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 2.6665L8 9.33984L6 7.33984"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_191_448">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span>Photo Download </span>
+              <span>10/Month</span>
+            </li>
+
+            <li class="plan__item">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_191_448)">
+                  <path
+                    d="M14.6668 7.38674V8.00007C14.666 9.43769 14.2005 10.8365 13.3397 11.988C12.4789 13.1394 11.269 13.9817 9.8904 14.3893C8.51178 14.797 7.03834 14.748 5.68981 14.2498C4.34128 13.7516 3.18993 12.8308 2.40747 11.6248C1.62501 10.4188 1.25336 8.99212 1.34795 7.55762C1.44254 6.12312 1.9983 4.75762 2.93235 3.66479C3.8664 2.57195 5.12869 1.81033 6.53096 1.4935C7.93323 1.17668 9.40034 1.32163 10.7135 1.90674"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M14.6667 2.6665L8 9.33984L6 7.33984"
+                    stroke="#00ACEC"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_191_448">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+
+              <span>Inspection </span>
+            </li>
+          </ul>
+
+          <button class="plan__button">Choose Plan</button>
+        </div>
+      </section>
+
+      <section class="brands main__brand">
+        <h2 class="brands__title">Search By Makes</h2>
+        <p class="brands__desc">
+          Advanced search allows you to filter 4.9 million new & used cars
+          listings to find the exact car you are looking for the first time.
+        </p>
+
+        <div class="brands__wrapper">
+          <div class="brands__brand">
+            <img src="./assets/mazda.svg" alt="mazda" />
+
+            <span>Available 1400</span>
+          </div>
+
+          <div class="brands__brand">
+            <img src="./assets/lexus.svg" alt="lexus" />
+
+            <span>Available 1400</span>
+          </div>
+
+          <div class="brands__brand">
+            <img src="./assets/ford.svg" alt="ford" />
+
+            <span>Available 1400</span>
+          </div>
+
+          <div class="brands__brand">
+            <img src="./assets/honda.svg" alt="honda" />
+
+            <span>Available 1400</span>
+          </div>
+
+          <div class="brands__brand">
+            <img src="./assets/toyota.svg" alt="toyota" />
+
+            <span>Available 1400</span>
+          </div>
+
+          <div class="brands__brand">
+            <img src="./assets/mercedes-benz.svg" alt="mercedes-benz" />
+
+            <span>Available 1400</span>
+          </div>
+
+          <div class="brands__brand">
+            <img src="./assets/volkswagen.svg" alt="volkswagen" />
+
+            <span>Available 1400</span>
+          </div>
+
+          <div class="brands__brand">
+            <img src="./assets/nissan.svg" alt="nissan" />
+
+            <span>Available 1400</span>
+          </div>
+
+          <div class="brands__brand">
+            <img src="./assets/bmw.svg" alt="bmw" />
+
+            <span>Available 1400</span>
+          </div>
+
+          <div class="brands__brand">
+            <img src="./assets/dhamija-jaguar.svg" alt="jaguar" />
+
+            <span>Available 1400</span>
+          </div>
+
+          <div class="brands__brand">
+            <img src="./assets/suzuky.svg" alt="suzuki" />
+            <span>Available 1400</span>
+          </div>
+
+          <div class="brands__brand">
+            <img src="./assets/daihatsu.svg" alt="daihatsu" />
+
+            <span>Available 1400</span>
+          </div>
+
+          <div class="brands__brand">
+            <img src="./assets/volvo.svg" alt="volvo" />
+
+            <span>Available 1400</span>
+          </div>
+
+          <div class="brands__brand">
+            <img src="./assets/hyundai.svg" alt="hyundai" />
+
+            <span>Available 1400</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="questions">
+        <h2 class="questions__title">Frequnetly Ask Questions</h2>
+        <p class="questions__desc">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor
+        </p>
+
+        <img src="./assets/image10.png" alt="" />
+
+        <ul class="accordion questions__accordion">
+          <li class="accordion__item">
+            <h3 class="accordion__title">
+              IS it save to purchase cars at Autowins
+            </h3>
+            <p class="accordion__desc">
+              Yes. Autowini offers the safest way to buy vehicles through our
+              safe payment & shipping service called B.I.S(Buy it Safely!) Also,
+              Autowini has 5 guaranteed programs for your safe trade.
+            </p>
+          </li>
+          <li class="accordion__item">
+            <h3 class="accordion__title">2. What are my benefits</h3>
+            <p class="accordion__desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum perspiciatis esse quia at placeat quidem assumenda,
+              ducimus dicta fugiat minima.
+            </p>
+          </li>
+          <li class="accordion__item">
+            <h3 class="accordion__title">
+              3. What is the process of purchasing cars?
+            </h3>
+            <p class="accordion__desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum perspiciatis esse quia at placeat quidem assumenda,
+              ducimus dicta fugiat minima.
+            </p>
+          </li>
+          <li class="accordion__item">
+            <h3 class="accordion__title">4. How can I Pay?</h3>
+            <p class="accordion__desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum perspiciatis esse quia at placeat quidem assumenda,
+              ducimus dicta fugiat minima.
+            </p>
+          </li>
+          <li class="accordion__item">
+            <h3 class="accordion__title">
+              5. How can I check the condition of the vehicle?
+            </h3>
+            <p class="accordion__desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum perspiciatis esse quia at placeat quidem assumenda,
+              ducimus dicta fugiat minima.
+            </p>
+          </li>
+          <li class="accordion__item">
+            <h3 class="accordion__title">
+              6. Does the price include shipping cost?
+            </h3>
+            <p class="accordion__desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum perspiciatis esse quia at placeat quidem assumenda,
+              ducimus dicta fugiat minima.
+            </p>
+          </li>
+          <li class="accordion__item">
+            <h3 class="accordion__title">
+              7. How long until the item arrives at my port?
+            </h3>
+            <p class="accordion__desc">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatum perspiciatis esse quia at placeat quidem assumenda,
+              ducimus dicta fugiat minima.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="app main__app">
+        <h2 class="app__title">
+          Shop used car’s whether you’re on the lot or on the go
+        </h2>
+        <p class="app__desc">
+          Donload our app to save cars and create alerts, scan window stickers
+          on our lot for more details, and even call dis on a car by holding it
+          for up 7 days.
+        </p>
+
+        <a href="#" class="app__app-store">
+          <img src="./assets/app-store.svg" alt="" />
+        </a>
+        <a href="#" class="app__google-play">
+          <img src="./assets/google-play.svg" alt="" />
+        </a>
+        <img src="./assets/illustration.svg" alt="illustration" />
+      </section>
+    </main>
+
+    <footer class="footer">
+      <img src="./assets/logo.svg" alt="logo" />
+
+      <p class="footer__desc">
+        Trusted Global Auto trading Platform many variations of passages of
+        Lorem available, but the majority have
+      </p>
+
+      <div class="footer__social-media">
+        <a href="#" class="footer__link">
+          <img src="./assets/facebook.svg" alt="facebook" />
+        </a>
+        <a href="#" class="footer__link">
+          <img src="./assets/youtube.svg" alt="youtube" />
+        </a>
+        <a href="#" class="footer__link">
+          <img src="./assets/instagram.svg" alt="instagram" />
+        </a>
+      </div>
+
+      <ul class="footer__link-wrapper">
+        <h3>About Us</h3>
+        <li class="footer__link">Contact Us</li>
+        <li class="footer__link">Banner Ad</li>
+        <li class="footer__link">Term of use</li>
+        <li class="footer__link">Privacy Policy</li>
+      </ul>
+
+      <ul class="footer__link-wrapper">
+        <h3>Buy</h3>
+        <li class="footer__link">Cars</li>
+        <li class="footer__link">Trucks</li>
+        <li class="footer__link">Buses</li>
+        <li class="footer__link">Equipment</li>
+      </ul>
+      <ul class="footer__link-wrapper">
+        <h3>Hou to buy</h3>
+        <li class="footer__link">"Buy it Safely" (B.I.S)</li>
+        <li class="footer__link">Vehicle Purchase Guide</li>
+        <li class="footer__link">Parts Shop</li>
+      </ul>
+      <ul class="footer__link-wrapper">
+        <h3>Shipping</h3>
+        <li class="footer__link">Shipping Schedule</li>
+        <li class="footer__link">Shipping Photos</li>
+        <li class="footer__link">Type of Shipping</li>
+      </ul>
+      <ul class="footer__link-wrapper">
+        <h3>Community</h3>
+        <li class="footer__link">Customer's Reviews</li>
+        <li class="footer__link">Autowini Magazine</li>
+      </ul>
+    </footer>
+  </body>
 </html>
